@@ -4,7 +4,7 @@ import java.util.List;
 
 public class PitStopCounter {
 
-    public int countPitStops(List<PitStop> pitStops) {
+    public int countPitStops(List<Pitstop> pitStops) {
 
         if (pitStops == null) {
             return 0;

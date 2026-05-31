@@ -1,8 +1,10 @@
 package pl.edu.agh.mwo;
 
+import java.util.List;
+
 public class AveragePitStopsDuration {
 
-    public double averagePitStopsDuration(List<PitStop> pitStops) {
+    public double averagePitStopsDuration(List<Pitstop> pitStops) {
 
         if (pitStops == null || pitStops.isEmpty()) {
             return 0.0;
@@ -10,7 +12,7 @@ public class AveragePitStopsDuration {
 
         double sum = 0;
 
-        for (PitStop pitStop : pitStops) {
+        for (Pitstop pitStop : pitStops) {
             sum += pitStop.getPitDuration();
         }
 

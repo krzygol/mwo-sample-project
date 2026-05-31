@@ -4,7 +4,7 @@ import java.util.List;
 
 public class StartEndLaps {
 
-    public String startStopLaps(List<PitStop> pitStops) {
+    public String startStopLaps(List<Pitstop> pitStops) {
 
         if (pitStops == null || pitStops.isEmpty()) {
             return "Brak danych";
@@ -13,7 +13,7 @@ public class StartEndLaps {
         int firstLap = pitStops.get(0).getLapNumber();
         int lastLap = pitStops.get(0).getLapNumber();
 
-        for (PitStop pitStop : pitStops) {
+        for (Pitstop pitStop : pitStops) {
 
             if (pitStop.getLapNumber() < firstLap) {
                 firstLap = pitStop.getLapNumber();
